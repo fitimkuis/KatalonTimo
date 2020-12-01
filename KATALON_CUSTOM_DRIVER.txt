@@ -1,0 +1,31 @@
+
+
+k‰ynnist‰ uusi chromedriver
+import org.openqa.selenium.chrome.ChromeDriver
+import org.openqa.selenium.chrome.ChromeOptions
+import org.openqa.selenium.remote.DesiredCapabilities
+import com.kms.katalon.core.webui.driver.DriverFactory
+//Set chromedriver path
+ChromeOptions options = new ChromeOptions();
+DesiredCapabilities capabilities = new DesiredCapabilities();
+capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\fitim\\Desktop\\ajuri\\chromedriver.exe");
+ChromeDriver driver = new ChromeDriver(capabilities);
+DriverFactory.changeWebDriver(driver)
+
+tee uusi custom ajuri headless
+C:\KatalonStudio\DataDrivenTestMaster\settings\external\execution\custom
+com.kms.katalon.core.webui.chrome.properties
+{"CHROME_DRIVER":{"args":["--no-sandbox","--disable-infobars","--start-maximized","--headless"]}}
+
+tai lis‰‰ olemassa oleviin ajureihin uusia capabilities
+C:\KatalonStudio\DataDrivenTestMaster\settings\internal\com.kms.katalon.core.webui.chrome.properties
+{"CHROME_DRIVER":{"args":["--no-sandbox","--disable-infobars"]}}
+
+
+katalon -noSplash  -runMode=console -consoleLog -noExit -projectPath="C:\KatalonStudio\DataDrivenTestMaster\Data Driven.prj" -retry=0 -testSuitePath="Test Suites/Custom Driver" -executionProfile="default" -browserType="custom"
+
+
+Katalon System.setProperty
+
+how much you have been rided so far

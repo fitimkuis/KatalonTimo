@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>JavaScript</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bd7dd489-e663-4b0a-9bab-10772d4830e8</testCaseGuid>
+   <variable>
+      <defaultValue>'Timo'</defaultValue>
+      <description></description>
+      <id>441b73f4-c187-4af4-a82c-da14ce9d8e64</id>
+      <masked>false</masked>
+      <name>myvar</name>
+   </variable>
+</TestCaseEntity>

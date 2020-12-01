@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>next-month</name>
+   <tag></tag>
+   <elementGuidId>cff77a44-3def-4c8f-9065-f7431a9e6b0f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[count(. | //*[@class = 'dp-nav-next-month']) = count(//*[@class = 'dp-nav-next-month'])][count(. | //*[@href = '#']) = count(//*[@href = '#'])][count(. | //*[@title = 'Next month']) = count(//*[@title = 'Next month'])][count(. | //*[text() = '>']) = count(//*[text() = '>'])][count(. | id(&quot;dp-popup&quot;)/div[@class=&quot;dp-nav-next&quot;]/a[@class=&quot;dp-nav-next-month&quot;]) = count(id(&quot;dp-popup&quot;)/div[@class=&quot;dp-nav-next&quot;]/a[@class=&quot;dp-nav-next-month&quot;])]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dp-nav-next-month</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Next month</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>></value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dp-popup&quot;)/div[@class=&quot;dp-nav-next&quot;]/a[@class=&quot;dp-nav-next-month&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>dataBinding</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5cd7be2c-f707-4ab1-83b7-43253f0c4cff</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9f637f52-ce52-44ef-b2fc-08fb507a1642</id>
+      <masked>false</masked>
+      <name>Parameters</name>
+   </variable>
+</TestCaseEntity>

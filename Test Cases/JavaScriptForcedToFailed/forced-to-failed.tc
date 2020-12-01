@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>forced-to-failed</name>
+   <tag></tag>
+   <comment>myMessage</comment>
+   <testCaseGuid>debc25a0-04c9-4709-aa94-72378cdd8e79</testCaseGuid>
+</TestCaseEntity>

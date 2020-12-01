@@ -1,0 +1,163 @@
+﻿NEW Katalon 7.x
+del /q "%WORKSPACE%\Reports\RegressionTestSuite\*"
+FOR /D %%p IN ("%WORKSPACE%\Reports\RegressionTestSuite\*.*") DO rmdir "%%p" /s /q
+cd C:\Users\fitim\katalon\Katalon_Studio_Engine_Windows_64-7.2.1
+katalonc -noSplash  -runMode=console -reportFolder="%WORKSPACE%/Reports" -projectPath="%WORKSPACE%\KatalonProject.prj" -retry=0 -testSuiteCollectionPath="Test Suites/RegressionTestSuiteCollection" -browserType="Chrome (headless)" -apiKey=27f70c12-7093-4ea7-83d6-ed64ce7c257b -apikey=0145e236-3ede-43a2-a1bf-4c5c9e27fd23
+if ERRORLEVEL 1 set ERRORLEVEL=0
+
+############################################################
+
+
+
+C:\Users\fitim\KatalonStudio\Katalon6.1.5\configuration\resources\drivers\chromedriver_win32\chromedriver.exe. 
+In case your browser is updated to a newer version, please use this command to update chromdriver: --config -webui.autoUpdateDrivers=true
+
+TESTIJENKINS projekti
+cd C:\Users\fitim\KatalonStudio\Katalon6.1.5
+katalon -noSplash  -runMode=console -projectPath="C:\Users\fitim\.git\KatalonProject\KatalonProject.prj" -retry=0 -testSuiteCollectionPath="Test Suites/RegressionTestSuiteCollection" -browserType="Chrome (headless)" -apiKey=27f70c12-7093-4ea7-83d6-ed64ce7c257b -apikey=0145e236-3ede-43a2-a1bf-4c5c9e27fd23
+
+file:///C:\Users\fitim\KatalonStudio\KatalonProject
+
+¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+aja ktalon exe Jenkins workspace
+cd C:\Users\fitim\KatalonStudio\Katalon6.1.5
+katalon -noSplash  -runMode=console -reportFolder="%WORKSPACE%/Reports" -projectPath="%WORKSPACE%\KatalonProject.prj" -retry=0 -testSuiteCollectionPath="Test Suites/RegressionTestSuiteCollection" -browserType="Chrome (headless)" -apiKey=27f70c12-7093-4ea7-83d6-ed64ce7c257b -apikey=0145e236-3ede-43a2-a1bf-4c5c9e27fd23
+del /q "%WORKSPACE%\Reports\*"
+FOR /D %%p IN ("%WORKSPACE%\Reports\*.*") DO rmdir "%%p" /s /q
+FOR /F "delims=" %%i IN ('dir "%WORKSPACE%\Reports\RegressionTestSuite" /b /ad-h /t:c /o-d') DO (
+    SET a=%%i
+    GOTO :found
+)
+echo No subfolder found
+goto :eof
+:found
+echo Most recent subfolder: %a%
+robocopy %WORKSPACE%\Reports\%a% "%WORKSPACE%\Reports" /E /COPYALL /V /NP /R:0
+if ERRORLEVEL 1 set ERRORLEVEL=0
+
+
+UUSI REPORT  &&&&&&&&&&&&&&&&
+(x86)\Jenkins\workspace\TestSuiteCollection\Reports\RegressionTestSuite\20190530_180326\JUnit_Report.xml
+
+Jenkins JUnit folder
+Reports\RegressionTestSuite\**\*.xml
+
+del /q "%WORKSPACE%\Reports\RegressionTestSuite\*"
+FOR /D %%p IN ("%WORKSPACE%\Reports\RegressionTestSuite\*.*") DO rmdir "%%p" /s /q
+cd C:\Users\fitim\KatalonStudio\Katalon6.1.5
+katalon -noSplash  -runMode=console -reportFolder="%WORKSPACE%/Reports" -projectPath="%WORKSPACE%\KatalonProject.prj" -retry=0 -testSuiteCollectionPath="Test Suites/RegressionTestSuiteCollection" -browserType="Chrome (headless)" -apiKey=27f70c12-7093-4ea7-83d6-ed64ce7c257b -apikey=0145e236-3ede-43a2-a1bf-4c5c9e27fd23
+if ERRORLEVEL 1 set ERRORLEVEL=0
+
+¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+
+############################################################################
+UUS polku
+
+cd C:\Users\fitim\KatalonStudio\Katalon6.1.5
+katalon -noSplash  -runMode=console -projectPath="C:\Users\fitim\KatalonFromGitHub\KatalonProject\KatalonProject.prj" -retry=0 -testSuiteCollectionPath="Test Suites/RegressionTestSuiteCollection" -browserType="Chrome (headless)" -apiKey=27f70c12-7093-4ea7-83d6-ed64ce7c257b -apikey=0145e236-3ede-43a2-a1bf-4c5c9e27fd23
+del /q "C:\Program Files (x86)\Jenkins\workspace\TestSuiteCollection\Reports\*"
+FOR /D %%p IN ("C:\Program Files (x86)\Jenkins\workspace\TestSuiteCollection\Reports\*.*") DO rmdir "%%p" /s /q
+FOR /F "delims=" %%i IN ('dir "C:\Users\fitim\KatalonFromGitHub\KatalonProject\Reports\RegressionTestSuite" /b /ad-h /t:c /o-d') DO (
+    SET a=%%i
+    GOTO :found
+)
+echo No subfolder found
+goto :eof
+:found
+echo Most recent subfolder: %a%
+robocopy C:\Users\fitim\KatalonFromGitHub\KatalonProject\Reports\RegressionTestSuite\%a% "C:\Program Files (x86)\Jenkins\workspace\TestSuiteCollection\Reports" /E /COPYALL /V /NP /R:0
+if ERRORLEVEL 1 set ERRORLEVEL=0
+
+
+LINUX UBUNTU
+#!/bin/bash
+export DISPLAY=:1
+cd /home/timo/Desktop/katalon-project/KatalonProject
+/home/timo/Desktop/Katalon_Studio_Linux_64-6.1.6/katalon -noSplash  -runMode=console -reportFolder="$WORKSPACE/Reports" -projectPath="$WORKSPACE/KatalonProject.prj" -retry=0 -testSuiteCollectionPath="Test Suites/RegressionTestSuiteCollection" -browserType="Firefox" -apiKey=27f70c12-7093-4ea7-83d6-ed64ce7c257b -apikey=0145e236-3ede-43a2-a1bf-4c5c9e27fd23
+set +e
+
+###############################################
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+JENKINS WORKSPACE polku
+
+cd C:\Users\fitim\KatalonStudio\Katalon6.1.5
+katalon -noSplash  -runMode=console -projectPath="$WORKSPACE\*.prj" -retry=0 -testSuiteCollectionPath="Test Suites/RegressionTestSuiteCollection" -browserType="Chrome (headless)" -apiKey=27f70c12-7093-4ea7-83d6-ed64ce7c257b -apikey=0145e236-3ede-43a2-a1bf-4c5c9e27fd23
+del /q "$WORKSPACE\Reports\*"
+FOR /D %%p IN ("$WORKSPACE\Reports\*.*") DO rmdir "%%p" /s /q
+FOR /F "delims=" %%i IN ('dir "$WORKSPACE\Reports\RegressionTestSuite" /b /ad-h /t:c /o-d') DO (
+    SET a=%%i
+    GOTO :found
+)
+echo No subfolder found
+goto :eof
+:found
+echo Most recent subfolder: %a%
+robocopy $WORKSPACE\Reports\RegressionTestSuite\%a% "$WORKSPACE\Reports" /E /COPYALL /V /NP /R:0
+if ERRORLEVEL 1 set ERRORLEVEL=0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+##########################################################
+Verify that element is not editable
+
+hi,
+this should work if object is readOnly true
+//set object value as readOnly false
+def y = WebUI.executeJavaScript("return document.getElementsByClassName('form-control')[0].readOnly=false;", null)
+println ("DEBUG readOnly value y "+y)
+you can use javascript to find out is object editable or not
+def z = WebUI.executeJavaScript("return document.getElementsByClassName('form-control')[0].readOnly;", null)
+if (z){
+println ("DEBUG object is NOT editable "+z)
+}
+else{
+println ("DEBUG object is editable "+z) //z is false so object is editable
+}
+
+
+katalon -noSplash  -runMode=console -projectPath="C:\KatalonStudio\DataDrivenTestMaster\Data Driven.prj" -retry=0 -testSuiteCollectionPath="Test Suites/NewTestSuiteCollection"
+
+katalon -noSplash  -runMode=console -projectPath="C:\KatalonStudio\DataDrivenTestMaster\Data Driven.prj" -retry=0 -testSuitePath="Test Suites/Pdf" -executionProfile="default" -browserType="Chrome"
+
+
+
+
+
+katalon -noSplash  -runMode=console -projectPath="C:\KatalonStudio\DataDrivenTestMaster\Data Driven.prj" -retry=0 -testSuiteCollectionPath="Test Suites/NewTestSuiteCollection"
+
+tämä oli
+cd C:\KatalonStudio\Katalon_Studio_Windows_64-5.8.6
+katalon -noSplash  -runMode=console -projectPath="C:\KatalonStudio\DataDrivenTestMaster\Data Driven.prj" -retry=0 -testSuitePath="Test Suites/Pdf" -executionProfile="default" -browserType="Chrome"
+del /q "C:\Program Files (x86)\Jenkins\workspace\Katalon Studio pdf test\Reports\*"
+FOR /D %%p IN ("C:\Program Files (x86)\Jenkins\workspace\Katalon Studio pdf test\Reports\*.*") DO rmdir "%%p" /s /q
+FOR /F "delims=" %%i IN ('dir "C:\KatalonStudio\DataDrivenTestMaster\Reports\Pdf" /b /ad-h /t:c /o-d') DO (
+    SET a=%%i
+    GOTO :found
+)
+echo No subfolder found
+goto :eof
+:found
+echo Most recent subfolder: %a%
+robocopy C:\KatalonStudio\DataDrivenTestMaster\Reports\Pdf\%a% "C:\Program Files (x86)\Jenkins\workspace\Katalon Studio pdf test\Reports" /E /COPYALL /V /NP /R:0
+if ERRORLEVEL 1 set ERRORLEVEL=0
+
+laita tämä jolla saadaan ajettua testsuitecollection jossa ajetaan testsuite
+cd C:\KatalonStudio\Katalon6.1.10
+katalon -noSplash  -runMode=console -projectPath="C:\KatalonStudio\KatalonProject\KatalonProject.prj" -retry=0 -testSuiteCollectionPath="Test Suites/RegressionTestSuiteCollection"
+del /q "C:\Program Files (x86)\Jenkins\workspace\TestSuiteCollection\Reports\*"
+FOR /D %%p IN ("C:\Program Files (x86)\Jenkins\workspace\TestSuiteCollection\Reports\*.*") DO rmdir "%%p" /s /q
+FOR /F "delims=" %%i IN ('dir "C:\KatalonStudio\KatalonProject\Reports\RegressionTestSuite" /b /ad-h /t:c /o-d') DO (
+    SET a=%%i
+    GOTO :found
+)
+echo No subfolder found
+goto :eof
+:found
+echo Most recent subfolder: %a%
+robocopy C:\KatalonStudio\KatalonProject\Reports\RegressionTestSuite\%a% "C:\Program Files (x86)\Jenkins\workspace\TestSuiteCollection\Reports" /E /COPYALL /V /NP /R:0
+if ERRORLEVEL 1 set ERRORLEVEL=0
+
+
+Reports/*.xml
+
+
+C:\Users\fitim\.jenkins\jobs\RegressionTests\htmlreports\HTML_20Report\Reports\RegressionTestSuite

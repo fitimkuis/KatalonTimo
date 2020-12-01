@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>jQueryDatePicker</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3e6f1767-bc3d-4f33-9cdc-cacb76f99c86</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>33eb3d4f-05ce-4ed3-b61a-0e4faddd1724</id>
+      <masked>false</masked>
+      <name>day</name>
+   </variable>
+</TestCaseEntity>

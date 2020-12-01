@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>withoutWhiteSpaces-javascript</name>
+   <tag></tag>
+   <comment>myMessage</comment>
+   <testCaseGuid>06002eea-4cb4-4b65-a7c6-93cb0ac7c976</testCaseGuid>
+</TestCaseEntity>

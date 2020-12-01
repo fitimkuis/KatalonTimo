@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ChromeOptions</name>
+   <tag></tag>
+   <comment>After test delete files</comment>
+   <testCaseGuid>f5ef6abc-7815-477b-9cca-198a37a29f41</testCaseGuid>
+</TestCaseEntity>

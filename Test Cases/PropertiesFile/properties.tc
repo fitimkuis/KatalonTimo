@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>properties</name>
+   <tag></tag>
+   <comment>>>> currentTestCaseId=$GlobalVariable.currentTestCaseId</comment>
+   <testCaseGuid>01163d9e-46a5-4b30-90ef-e69ce7c3635f</testCaseGuid>
+</TestCaseEntity>
